@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\RabbitMqMessageReciever.props" />
+</Project>
