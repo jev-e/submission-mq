@@ -1,14 +1,35 @@
 ﻿using RabbitMQ.Client;
+using RabbitMqApi.Model;
 using RabbitMqApi.PubSub;
+using System.Text.Json;
 
 namespace RabbitMqApi.Queue
 {
-    public class SubmissionPublisher 
-        : Publisher, ISubmissionPublisher
+    public class SubmissionPublisher()
+        : ISubmissionPublisher
     {
-        static SubmissionPublisher()
+        internal static string exchange = "submisson";
+
+        internal IPublisher publisher;
+        internal IModel channel;
+
+        public SubmissionPublisher(IPublisher publisher) : this()
         {
-            channel.ExchangeDeclare("submission", ExchangeType.Fanout);
+            this.publisher = publisher;
+            channel = this.publisher.GetConnection().CreateModel();
+            channel.ExchangeDeclare(exchange, ExchangeType.Fanout);
         }
+
+        public void PublishNewSubmission(Submission submission)
+        {
+            var body = JsonSerializer.SerializeToUtf8Bytes(submission);
+            IBasicProperties props = channel.CreateBasicProperties();
+            props.ContentType = "application/json";
+            props.DeliveryMode = 2;
+            channel.BasicPublish(exchange, string.Empty, props, body);
+        }
+
+
+
     }
 }

@@ -1,5 +1,6 @@
 
 using RabbitMqApi.Handlers;
+using RabbitMqApi.Extensions;
 
 namespace RabbitMqApi
 {
@@ -16,6 +17,8 @@ namespace RabbitMqApi
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddLogging(builder => builder.AddConsole());
+
+            builder.Services.RegisterPubSub();
 
             builder.Services.AddScoped<ISubmissionHandler, SubmissionHandler>();
 

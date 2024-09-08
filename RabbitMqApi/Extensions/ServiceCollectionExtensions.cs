@@ -1,14 +1,15 @@
-﻿using RabbitMqApi.Queue;
+﻿using RabbitMqApi.PubSub;
+using RabbitMqApi.Queue;
 
 namespace RabbitMqApi.Extensions
 {
     public static class ServiceCollectionExtensions
     {
-        public void RegisterPubSub(this IServiceCollection collection)
+        public static void RegisterPubSub(this IServiceCollection collection)
         {
             var publisher = new Publisher();
-            var submissionPublisher = new SubmissionPublisher();
-            collection.AddSingleton()
+            collection.AddSingleton <IPublisher>(publisher);
+            collection.AddSingleton<ISubmissionPublisher, SubmissionPublisher>();
         }
     }
 }

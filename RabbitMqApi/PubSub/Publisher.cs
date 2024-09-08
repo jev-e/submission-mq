@@ -1,22 +1,21 @@
 ﻿using RabbitMQ.Client;
+using RabbitMqApi.PubSub;
 
 namespace RabbitMqApi.Queue
 {
-    public class Publisher
+    public class Publisher : IPublisher
     {
-        protected static readonly IConnection connection;
-        protected static readonly IModel channel;
+        internal static readonly IConnection connection;
 
         static Publisher()
         {
             ConnectionFactory factory = new ConnectionFactory() { HostName = "localhost" };
-            // "guest"/"guest" by default, limited to localhost connections
-
-            // this name will be shared by all connections instantiated by
-            // this factory
-
             connection = factory.CreateConnection();
-            channel = connection.CreateModel();
+        }
+
+        public IConnection GetConnection() 
+        {
+            return connection;
         }
     }
 }

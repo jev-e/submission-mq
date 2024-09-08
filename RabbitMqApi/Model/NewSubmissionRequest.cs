@@ -13,9 +13,6 @@ namespace RabbitMqApi.Model
         [Required]
         public int Premium;
 
-        public Guid RequestId;
-
-
         public Status Status;
     }
 }
