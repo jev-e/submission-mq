@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using RabbitMqTypes;
+using System.ComponentModel.DataAnnotations;
 
 namespace RabbitMqApi.Model
 {

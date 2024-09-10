@@ -1,4 +1,4 @@
-﻿namespace RabbitMqApi.Model
+﻿namespace RabbitMqTypes
 {
     public enum Status
     {

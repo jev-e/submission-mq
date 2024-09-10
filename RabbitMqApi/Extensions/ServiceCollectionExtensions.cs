@@ -8,7 +8,7 @@ namespace RabbitMqApi.Extensions
         public static void RegisterPubSub(this IServiceCollection collection)
         {
             var publisher = new Publisher();
-            collection.AddSingleton <IPublisher>(publisher);
+            collection.AddSingleton<IPublisher>(publisher);
             collection.AddSingleton<ISubmissionPublisher, SubmissionPublisher>();
         }
     }

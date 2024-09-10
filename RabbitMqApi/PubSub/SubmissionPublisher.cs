@@ -1,6 +1,7 @@
 ﻿using RabbitMQ.Client;
 using RabbitMqApi.Model;
 using RabbitMqApi.PubSub;
+using RabbitMqTypes;
 using System.Text.Json;
 
 namespace RabbitMqApi.Queue
@@ -8,7 +9,7 @@ namespace RabbitMqApi.Queue
     public class SubmissionPublisher()
         : ISubmissionPublisher
     {
-        internal static string exchange = "submisson";
+        internal static string exchange = "submission";
 
         internal IPublisher publisher;
         internal IModel channel;

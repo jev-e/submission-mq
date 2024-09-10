@@ -1,4 +1,5 @@
 ﻿using RabbitMqApi.Model;
+using RabbitMqTypes;
 
 namespace RabbitMqApi.PubSub
 {

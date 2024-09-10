@@ -1,6 +1,6 @@
 ﻿using RabbitMqApi.Model;
 using RabbitMqApi.PubSub;
-
+using RabbitMqTypes;
 namespace RabbitMqApi.Handlers
 {
     public class SubmissionHandler(ISubmissionPublisher submissionPublisher) : ISubmissionHandler
