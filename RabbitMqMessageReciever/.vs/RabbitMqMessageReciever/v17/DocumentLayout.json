@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{BEE1680C-D08B-42BF-9113-D3D17EEF208A}|RabbitMqMessageReciever.csproj|solutionrelative:receiver\\messagereceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEE1680C-D08B-42BF-9113-D3D17EEF208A}|RabbitMqMessageReciever.csproj|c:\\users\\jev\\source\\repos\\rabbitmqapi\\rabbitmqmessagereciever\\receiver\\imessagereceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEE1680C-D08B-42BF-9113-D3D17EEF208A}|RabbitMqMessageReciever.csproj|solutionrelative:receiver\\imessagereceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BEE1680C-D08B-42BF-9113-D3D17EEF208A}|RabbitMqMessageReciever.csproj|c:\\users\\jev\\source\\repos\\rabbitmqapi\\rabbitmqmessagereciever\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEE1680C-D08B-42BF-9113-D3D17EEF208A}|RabbitMqMessageReciever.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEE1680C-D08B-42BF-9113-D3D17EEF208A}|RabbitMqMessageReciever.csproj|c:\\users\\jev\\source\\repos\\rabbitmqapi\\rabbitmqmessagereciever\\receiver\\imessagereceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEE1680C-D08B-42BF-9113-D3D17EEF208A}|RabbitMqMessageReciever.csproj|solutionrelative:receiver\\imessagereceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Jev\\source\\repos\\RabbitMqApi\\RabbitMqMessageReciever\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -39,7 +39,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IMessageReceiver.cs",
               "DocumentMoniker": "C:\\Users\\Jev\\source\\repos\\RabbitMqApi\\RabbitMqMessageReciever\\Receiver\\IMessageReceiver.cs",
               "RelativeDocumentMoniker": "Receiver\\IMessageReceiver.cs",
@@ -47,8 +47,7 @@
               "RelativeToolTip": "Receiver\\IMessageReceiver.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T14:48:04.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-08T14:48:04.62Z"
             },
             {
               "$type": "Document",
@@ -58,7 +57,7 @@
               "RelativeDocumentMoniker": "Receiver\\MessageReceiver.cs",
               "ToolTip": "C:\\Users\\Jev\\source\\repos\\RabbitMqApi\\RabbitMqMessageReciever\\Receiver\\MessageReceiver.cs",
               "RelativeToolTip": "Receiver\\MessageReceiver.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAwAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-08T14:47:46.063Z",
               "EditorCaption": ""
